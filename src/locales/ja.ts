@@ -10,6 +10,12 @@ const ja = {
 	MULTIPLE_INPUT_HEX_PLACEHOLDER: "000000",
 	MULTIPLE_INPUT_RGB_PLACEHOLDER: "0,0,0",
 	MULTIPLE_INPUT_HSL_PLACEHOLDER: "0,0%,0%",
+	// message
+	COPY_COLOR: "コピーしました",
+	// button
+	BUTTON_GO: "Go",
+	// other
+	NO_COLOR: "※ 色が選択されていません",
 } as const;
 
 export default ja;
