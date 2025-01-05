@@ -5,10 +5,10 @@ import React from "react";
  * @param hex カラーの16進数コード
  * @returns
  */
-const AColor = ({ hex }: { hex: string }) => {
+const AColor = ({ hex, w, h }: { hex: string; w: number; h: number }) => {
 	return (
 		<div
-			className={`w-10 h-10 rounded-lg`}
+			className={`w-${w} h-${h} rounded-lg`}
 			style={{ backgroundColor: hex }}
 		></div>
 	);
