@@ -1,18 +1,17 @@
-import React from 'react'
+import React from "react";
 
 /**
  * カラーパレットのカラーを表示するコンポーネント
  * @param hex カラーの16進数コード
- * @returns 
+ * @returns
  */
-const AColor = ({
-  hex
-}: {
-  hex: string;
-}) => {
-  return (
-    <div className={`w-10 h-10 rounded-lg`} style={{ backgroundColor: hex }}></div>
-  )
-}
+const AColor = ({ hex }: { hex: string }) => {
+	return (
+		<div
+			className={`w-10 h-10 rounded-lg`}
+			style={{ backgroundColor: hex }}
+		></div>
+	);
+};
 
-export default AColor
+export default AColor;
