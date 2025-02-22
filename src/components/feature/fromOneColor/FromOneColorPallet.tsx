@@ -9,7 +9,7 @@ const FromOneColorPallet = () => {
 	const { color, setColor } = useColorStore();
 
 	return (
-		<div className="flex justify-center items-center gap-2 ">
+		<div className="flex justify-center items-center gap-2 border-2 border-gray-300 rounded-lg p-2">
 			<MultipleInput setColor={setColor} />
 			{color && <ColorCodePallet />}
 		</div>

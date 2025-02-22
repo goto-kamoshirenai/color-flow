@@ -49,7 +49,7 @@ const ColorCodePallet = () => {
 	);
 
 	return (
-		<div className="flex flex-col items-center gap-2">
+		<div className="flex flex-col items-center gap-2 border-2 border-gray-300 rounded-lg p-2">
 			{!choiceColor && (
 				<p className="text-center text-gray-500">{t("NO_COLOR")}</p>
 			)}

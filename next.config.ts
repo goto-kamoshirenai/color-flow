@@ -6,6 +6,21 @@ const nextConfig: NextConfig = {
 		defaultLocale: "ja",
 		locales: ["ja", "en"],
 	},
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https", // httpsプロトコルのみ許可
+				hostname: "cdn.pixabay.com", // pixabayのCDNからの画像を許可
+				port: "", // ポートの指定なし
+				pathname: "/photo/**", // /photo/以下のパスからの画像を許可
+			},
+			{
+				protocol: "https", // httpsプロトコルのみ許可
+				hostname: "**", // すべてのホスト名を許可
+				port: "", // ポートの指定なし
+				pathname: "/**", // すべてのパスを許可
+			},
+		],
+	},
 };
-
 export default nextConfig;
